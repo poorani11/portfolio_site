@@ -1,0 +1,142 @@
+
+/* Mixin */
+@mixin full-page {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+}
+
+@mixin vertical-center {
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+body{
+    font-family: "G",sans-serif
+}
+
+.landing {
+  width:100vw;
+  height:100vh;
+    background-image: url("images/dot.svg"),linear-gradient(140deg,rgba(24,46,74,.85),rgba(70,174,195,.65)),url("images/profile.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-position: 10%  0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.land_container{
+     top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+#navv{
+  background:transparent;
+  border: 1px solid transparent;
+      position: absolute;
+    top: 30px;
+    right: 0;
+    left: 0;
+}
+.gear-navigation-large.light {
+    background-image: url("images/gear-white-large.svg");
+}
+.gear-navigation-large {
+    background-size: cover;
+    height: 27px;
+    width: 27px;
+    left: 20px;
+    bottom: 2px;
+    position: absolute;
+}
+.gear-navigation-small.light {
+    background-image: url("images/gear-white-small.svg");
+}
+.gear-navigation-small {
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    left: 46px;
+    position: absolute;
+    top: 10px;
+}
+
+#navbar-name{
+    float: left;
+    font-weight: 700;
+    height: 50px;
+    letter-spacing: 1px;
+    line-height: 50px;
+    margin-left: 15px;
+    padding-left: 50px;
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.navbar-links{
+    float: right;
+    padding: 0 10px;
+}
+#nav-title{
+    color:white;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+}
+#heading{
+        margin: 0 0 15px;
+        text-shadow: 0 1px 2px rgba(0,0,0,.3);
+        letter-spacing: 1.5px;
+        font-size: 45px;
+    line-height: 55px;
+}
+
+#hero_p{
+        color: #d7eff3;
+    margin: 0 auto 20px;
+    max-width: 550px;
+    width: 85%;
+    text-shadow: 0 1px 2px rgba(0,0,0,.3);
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: .25px;
+    line-height: 29px;
+}
+#about_me{
+        margin: 0 auto;
+    max-width: 225px;
+    background: linear-gradient(#69c339 0,#3ebd4d 100%);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);
+    display: block;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    max-width: 300px;
+    outline: 0;
+    padding: 18px 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0,0,0,.1);
+    width: 100%;
+    z-index: 100;
+}
+#about_me:hover{
+    color:white;
+}
+
+.hero-arrow{
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    height: 15px;
+    width: 40px;
+    background: url("images/down-arrow.svg") no-repeat;
+    bottom: 30px;
+    -webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
+}
